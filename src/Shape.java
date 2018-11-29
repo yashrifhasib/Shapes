@@ -9,7 +9,7 @@ public abstract class Shape {
     public abstract double perimeter();
 
     public String toString() {
-        return this.name;
+        return this.name + ", area = " + area() + ", perimeter = " + perimeter();
     }
 
 }
