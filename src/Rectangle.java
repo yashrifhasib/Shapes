@@ -11,7 +11,6 @@ public class Rectangle extends Shape {
     public double area() {
         return length * width;
     }
-
     public double perimeter() {
         return ( 2 * length ) + ( 2 * width );
     }
