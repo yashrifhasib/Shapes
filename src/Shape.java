@@ -17,7 +17,7 @@ public abstract class Shape implements Comparable<Shape> {
         return this.name + ", area = " + area() + ", perimeter = " + perimeter();
     }
 
-    public int compareToByArea( Shape other ) {
+    public int compareTo( Shape other ) {
         if (this.area() < other.area() )
             return -1;
         if (this.area() > other.area() )
@@ -45,7 +45,7 @@ public abstract class Shape implements Comparable<Shape> {
         for ( int i = 0; i < shapes.size() - 1; i++ ) {
             int lowPosition = i;
             for ( int j = i + 1; j < shapes.size(); j++ )
-                if ( shapes.get( i ).compareToByArea( shapes.get( lowPosition ) ) < 0 )
+                if ( shapes.get( i ).compareTo( shapes.get( lowPosition ) ) < 0 )
                     lowPosition = j;
             swap( i, lowPosition, shapes );
         }
