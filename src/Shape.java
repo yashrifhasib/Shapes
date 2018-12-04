@@ -1,6 +1,6 @@
 import java.util.List;
 
-public abstract class Shape {
+public abstract class Shape implements Comparable<Shape> {
     private String name;
 
     public Shape(String name) {
@@ -18,25 +18,25 @@ public abstract class Shape {
     }
 
     public int compareToByArea( Shape other ) {
-        if (this.area() < other.area())
+        if (this.area() < other.area() )
             return -1;
-        if (this.area() > other.area())
+        if (this.area() > other.area() )
             return 1;
         return 0;
     }
 
     public int compareToByPerimeter( Shape other ) {
-        if (this.perimeter() < other.perimeter())
+        if (this.perimeter() < other.perimeter() )
             return -1;
-        if (this.perimeter() > other.perimeter())
+        if (this.perimeter() > other.perimeter() )
             return 1;
         return 0;
     }
 
     public int compareToByDegrees( Shape other ) {
-        if (this.degrees() < this.degrees())
+        if (this.degrees() < this.degrees() )
             return -1;
-        if (this.degrees() > other.degrees())
+        if (this.degrees() > other.degrees() )
             return 1;
         return 0;
     }
