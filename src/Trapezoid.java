@@ -1,16 +1,9 @@
 public class Trapezoid extends Quadrilateral {
-    public Trapezoid( String name, double topSide, double bottomSide, double leftSide, double rightSide) {
+    private double height;
+    public Trapezoid( String name, double topSide, double bottomSide, double leftSide, double rightSide, double height ) {
         super( name, topSide, bottomSide, leftSide, rightSide );
+        this.height = height;
     }
 
-    public double area() {
-        double area = 0;
-        if ( getSide1() > getSide2() ) {
-
-        }
-        if ( getSide2() > getSide1() ) {
-
-        }
-        return area;
-    }
+    public double area() { return ( ( getSide1() + getSide2() ) * this.height ) / 2; }
 }
