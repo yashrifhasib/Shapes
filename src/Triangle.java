@@ -16,4 +16,5 @@ public class Triangle extends Shape {
     public double perimeter() {
         return this.a + this.b + this.c;
     }
+    public double degrees() { return 180; }
 }

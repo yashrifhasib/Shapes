@@ -12,4 +12,5 @@ public class Circle extends Shape {
     public double perimeter() {
         return ( 2 * Math.PI * this.radius );
     }
+    public double degrees() { return 360; }
 }

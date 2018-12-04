@@ -15,6 +15,7 @@ public abstract class Quadrilateral extends Shape {
     public double perimeter() {
         return this.side1 + this.side2 + this.side3 + this.side4;
     }
+    public double degrees() { return 360; }
 
     public double getSide1() {
         return this.side1;
